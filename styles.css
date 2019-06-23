@@ -1,0 +1,12 @@
+body{
+    min-width:300px;
+    min-height: 300px;
+    position: relative;
+}
+
+button{
+    display: block;
+    margin: 5px;
+    background-color: dodgerblue;
+    color: white;
+}

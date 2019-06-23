@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interface</title>
+	<link rel="stylesheet" type="text/css" href="interface.css">
+</head>
+<body>
+	<div id="box3">
+			<div id="user">
+			<!-- UserName:   <input type="text" placeholder="This is the text field"/> -->
+
+				<div id="buttons">
+					<input type="submit" id="followId" name="followId" value="Start"/>
+					<input type="reset"  name="resetBtn" value="Stop" id="stop"/>
+					<input type="button" id="unfollowId" name="resetBtn"/>
+				</div>
+			</br>
+			</br>
+			<!-- Password :     <input type="password" name="pass"> -->
+			</br>
+			</br>
+			</div>
+			<div class="form">
+
+				<p>
+					Hashtags:<input id="tags" type="text" placeholder="must end with comma(,)" name="name"  required/> Save 1-10 tags
+				</p>
+
+				<p id="box1">
+					* Example: beach, ocean,water,*
+				</p>
+
+				<p>
+					Follow Number: <input id="followNumber" type="text" name="name" autocomplete="off" required/> Example: 30
+				</p>
+
+				<p id="box1">
+					* if the post has less followers than specified above, go to next post*
+				</p>
+
+				<p>
+					Follow Sleep Time Between Follows:<input id="followDelay" placeholder="time in mins e.g. 10" type="text" name="name" autocomplete="off" required/> Example: Restarts in 1 hour
+				</p>
+
+				<p id="box1">
+					* Go to next tag during each Restart Cycle * Example: Hour 1 tag 1, Hour 2 tag 2, etc. Repeat
+				</p>
+
+				<!-- <p>
+					Unfollow Start Time: <input type="text" name="name" autocomplete="off" required/> Unfollows begin after these many hours
+				</p> -->
+
+				<!-- <p id="box1">
+					* Example: If UnfollowStart Time is 30, the Follow will stop in 30 hours and Unfollow starts *
+				</p> -->
+
+				<p>
+					Unfollow Number: <input type="text" id="unfollowNumber" name="name" autocomplete="off" required/> Example: 30
+				</p>
+
+				<p id="box1">
+					* Only the user followed by this extension will be unfollowed*
+				</p>
+
+				<p>
+					Unfollow Sleep Time Between Unfollows: <input id="unfollowDelay" placeholder="time in mins e.g. 10" type="text" name="name" autocomplete="off" required/> Example: Restarts in 1 hour
+				</p>
+
+				<p id="box1">
+					* Unfollow Cycles will restart until unfollowed all of past are done *
+				</p>
+
+				<p id="box2">
+					*Once all Unfollow Done,Then Restart Follows Automatically. *
+				</p>				
+			</div>
+
+			<div id="float">
+				<h1 id="complete"></h1>
+			</div>
+
+	</div>
+
+	
+	
+	<script src="popup.js"></script> 
+
+		
+</body>
+</html>
